@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="Formulario.js"></script>
+    <title>Formulário</title>
+  </head>
+  <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color:#363940;
+    }
+    #cadastro-form {
+        width: 400px; 
+        padding: 20px;
+        background-color: white;
+        height: 575px;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input[type="text"], input[type="email"], input[type="tel"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    #descricao {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        height: 100px;
+        }
+    button {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+  </style>
+  <body>
+      <form id="cadastro-form">
+      <h3>Cadastrar usuário</h3>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" maxlength="100"/>
+      <br />
+      <label for="sobrenome">Sobrenome:</label>
+      <input type="text" id="sobrenome" maxlength="100"/>
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" maxlength="100"/>
+      <br />
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" maxlength="15"/>
+      <br />
+      <label for="data">Data de Nascimento:</label>
+      <select id="dia">
+        <option value="" disabled selected>Dia</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <select id="mes">
+        <option value="" disabled selected>Mês</option>
+        <option value="1">Janeiro</option>
+        <option value="2">Fevereiro</option>
+        <option value="3">Março</option>
+        <option value="4">Abril</option>
+        <option value="5">Maio</option>
+        <option value="6">Junho</option>
+        <option value="7">Julho</option>
+        <option value="8">Agosto</option>
+        <option value="9">Setembro</option>
+        <option value="10">Outubro</option>
+        <option value="11">Novembro</option>
+        <option value="12">Dezembro</option>
+        </select>
+      <select id="ano">
+        <option value="" disabled selected>Ano</option>
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+        <option value="1995">1995</option>
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+      </select>
+      <br>
+      <label for="descricao">Descrição:</label>
+      <input type="text" id="descricao" maxlength="50"/>
+      <br />
+      <button type="submit" id="enviar">Enviar</button>
+      <button type="button" id="limpar">Limpar</button>
+      </form>
+    /<div>
+  </body>
+</html>
